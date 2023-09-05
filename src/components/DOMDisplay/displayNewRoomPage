@@ -1,0 +1,16 @@
+import createRoomForm from "./DisplayRoomForm";
+
+const displayNewRoomPage = () => {
+  const body = document.body;
+
+  const mainContainer = document.createElement("div");
+  mainContainer.className = "newRoom__Container";
+
+  const form = createRoomForm();
+
+  mainContainer.appendChild(form);
+
+  body.appendChild(mainContainer);
+};
+
+export { displayNewRoomPage };
