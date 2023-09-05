@@ -17,6 +17,10 @@ body {
   background-color: var(--background-color);
 }
 
+nav {
+  margin-bottom: 3rem;
+}
+
 .nav__heading {
   background: var(--primary-color);
   color: var(--text-color);
@@ -39,10 +43,13 @@ body {
 }
 
 .card__room {
-  margin-top: 5rem;
+  padding: 2rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  border: #04110d solid 1px;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 
 .room__barContainer {

@@ -70,7 +70,7 @@ const initialLoad = () => {
     roomFillBar.className = "room__fillBar";
     roomBarContainer.appendChild(roomFillBar);
     roomFillBar.textContent = room.cleanliness;
-    roomFillBar.width = `${room.cleanliness}rem`;
+    roomFillBar.style.width = `${room.cleanliness / 10}rem`;
 
     roomCard.appendChild(roomBarContainer);
 
