@@ -3,8 +3,6 @@ function room(name, cleanliness, tasks, frequency, lastCleaned = false) {
     name: name,
     cleanliness: cleanliness,
     tasks: tasks,
-    frequency: frequency,
-    lastCleaned: lastCleaned,
   };
 }
 

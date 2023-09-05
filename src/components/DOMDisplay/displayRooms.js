@@ -1,4 +1,5 @@
 import rooms from "../rooms";
+import displayRoom from "./displayRoom";
 
 const displayRooms = () => {
   const body = document.body;
@@ -41,6 +42,8 @@ const displayRooms = () => {
     roomCard.appendChild(roomCleanTip);
 
     roomsContainer.appendChild(roomCard);
+
+    roomCard.addEventListener("click", displayRoom);
   });
 
   body.appendChild(roomsContainer);

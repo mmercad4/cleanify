@@ -1,3 +1,5 @@
+import { displayNewRoomPage } from "./displayNewRoomPage";
+
 const displayNewRoomBtn = () => {
   const body = document.body;
 
@@ -10,6 +12,8 @@ const displayNewRoomBtn = () => {
 
   buttonContainer.appendChild(button);
   body.appendChild(buttonContainer);
+
+  button.addEventListener("click", displayNewRoomPage);
 };
 
 export { displayNewRoomBtn };

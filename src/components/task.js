@@ -1,9 +1,9 @@
-function task(name, cleanliness, date, repeat) {
+function task(name, cleanliness, frequency, lastCleaned = false) {
   return {
     name: name,
     cleanliness: cleanliness,
-    date: date,
-    repeat: repeat,
+    frequency: frequency,
+    lastCleaned: lastCleaned,
   };
 }
 

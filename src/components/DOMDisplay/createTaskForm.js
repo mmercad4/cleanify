@@ -1,4 +1,11 @@
+import addTaskToRoom from "./addTasksToRoom";
+import { displayNav } from "./displayNav";
+
 const createTaskForm = () => {
+  const body = document.body;
+  body.innerHTML = "";
+  displayNav();
+
   const form = document.createElement("form");
   form.id = "roomForm";
 
@@ -20,6 +27,12 @@ const createTaskForm = () => {
   cleanlinessInput.type = "range";
   cleanlinessInput.name = "cleanliness";
 
+  const createRoomBtn = document.createElement("button");
+  createRoomBtn.className = "roomTask__button";
+  createRoomBtn.textContent = "Done";
+
+  createRoomBtn.addEventListener("click", addTaskToRoom);
+
   form.appendChild(nameLabel);
   form.appendChild(nameInput);
   form.appendChild(frequencyLabel);
@@ -27,7 +40,9 @@ const createTaskForm = () => {
   form.appendChild(cleanlinessLabel);
   form.appendChild(cleanlinessInput);
 
-  return form;
+  form.appendChild(createRoomBtn);
+
+  body.appendChild(form);
 };
 
-export default createTask;
+export default createTaskForm;

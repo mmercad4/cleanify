@@ -4,11 +4,11 @@ import { displayNewRoomBtn } from "./DOMDisplay/displayNewRoomBtn";
 import { displayNewRoomPage } from "./DOMDisplay/displayNewRoomPage";
 
 const initialLoad = () => {
-  /*   displayNav();
+  const body = document.body;
+  body.innerHTML = "";
+  displayNav();
   displayRooms();
   displayNewRoomBtn();
- */
-  displayNewRoomPage();
 };
 
 export default initialLoad;
