@@ -1,16 +1,24 @@
 import room from "./room";
 
 const room1 = room("bedroom", 20, [
-  "Sweep",
-  "dust fan",
-  "Clean Erin's Desk",
-  "Empty out the fridge",
-  ,
-  "Empty out the fridge",
-  ,
-  "Empty out the fridge",
-  ,
-  "Empty out the fridge",
+  {
+    name: "Take out the trash",
+    cleanliness: 80,
+    frequency: 2,
+    lastCleaned: 5,
+  },
+  {
+    name: "Dishes",
+    cleanliness: 50,
+    frequency: 1,
+    lastCleaned: 3,
+  },
+  {
+    name: "Mop and sweep",
+    cleanliness: 20,
+    frequency: 3,
+    lastCleaned: 2,
+  },
 ]);
 
 const room2 = room("Kitchen", 60, [

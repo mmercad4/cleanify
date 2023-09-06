@@ -9,4 +9,4 @@ const displayNav = () => {
   body.appendChild(nav);
 };
 
-export { displayNav };
+export { displayNav }

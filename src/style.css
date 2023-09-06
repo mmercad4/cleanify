@@ -118,3 +118,10 @@ nav {
   align-items: center;
   justify-content: center;
 }
+
+.singleRoom__heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
